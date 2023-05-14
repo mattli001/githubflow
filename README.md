@@ -61,3 +61,8 @@ $ git add feature/2/c2.txt README.md
 $ git commit -m "feat: 2-c2"
 $ git push origin feature/2
 ```
+
+## Tagging v1.0.0 and release
+Create a new release from the main repository and tag it as v1.0.0. Use select "Recent Commits" to create a release from the latest commit on the main branch.  
+![select recent commits](./images/select-recent-commits.png)  
+Full step recording video: [download link](./images/release-v1.0.0.mp4)
