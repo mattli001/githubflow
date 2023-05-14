@@ -20,3 +20,11 @@ $ # update README.md
 $ git add feature/1/a1.txt README.md
 $ git commit -m "feat: 1-a1"
 ```
+### b1 & PR for feature 1
+```bash
+$ echo "b1" > feature/1/b1.txt
+$ # update README.md
+$ git add feature/1/b1.txt README.md
+$ git commit -m "feat: 1-b1"
+$ git push origin feature/1
+```
