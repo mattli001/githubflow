@@ -61,3 +61,27 @@ $ git add feature/2/c2.txt README.md
 $ git commit -m "feat: 2-c2"
 $ git push origin feature/2
 ```
+
+## hotfix 4
+Got a bug report from a user on the v1.0.0 release. Develope in the forked repository, create a branch named "hotfix/4" and develop it locally.
+```bash
+# add upstream for pull latest code from main repo
+git remote add upstream https://github.com/mattli001/githubflow.git
+git remote update -p
+# checkout hotfix/4 from v1.0.0 tag
+git checkout -b hotfix/4 v1.0.0
+# fix bug that has 3 commits
+echo "hotfix a4" > feature/1/hotfix_a4.txt
+git add feature/1/hotfix_a4.txt
+git commit -m "hotfix: 4-a4"
+echo "hotfix b4" > feature/2/hotfix_b4.txt
+git add feature/2/hotfix_b4.txt
+git commit -m "hotfix: 4-b4"
+git add README.md
+git commit -m "docs: update readme for hotfix 4"
+```
+
+PR to main repo (upstream) base on ` hotfix/4`
+```bash
+$ git push upstream hotfix/4
+```
