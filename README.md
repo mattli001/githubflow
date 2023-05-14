@@ -66,3 +66,27 @@ $ git push origin feature/2
 Create a new release from the main repository and tag it as v1.0.0. Use select "Recent Commits" to create a release from the latest commit on the main branch.  
 ![select recent commits](./images/select-recent-commits.png)  
 Full step recording video: [download link](./images/release-v1.0.0.mp4)
+
+
+## feature 3
+Still develop in the main repository, but create a branch named "feature/3" and develop it locally.
+```bash
+$ git remote update -p
+$ git checkout -b feature/3 origin/main
+$ mkdir -p feature/3
+$ echo "a3" > feature/3/a3.txt
+$ git add feature/3/a3.txt
+$ git commit -m "feat: 3-a3"
+$ echo "b3" > feature/3/b3.txt
+$ git add feature/3/b3.txt
+$ git commit -m "feat: 3-b3"
+$ echo "c3" > feature/3/c3.txt
+$ git add feature/3/c3.txt README.md
+$ git commit -m "feat: 3-c3"
+$ git push origin feature/3
+```
+
+PR to main repo base on `feature/3`
+```bash
+$ git push origin feature/3
+```
