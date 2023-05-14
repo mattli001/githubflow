@@ -1,13 +1,12 @@
 # githubflow
 
-# 原始文章
+# Reference doc
 [A Branching and Releasing Strategy That Fits GitHub Flow](https://hackernoon.com/a-branching-and-releasing-strategy-that-fits-github-flow-be1b6c48eca2)
 
-# 文章實測操作
+# Hands on
 ## feature 1
-直接在 main repo 上開一個 branch，命名為 feature/1，並在 local 上開發  
-註: 
-blog 的說明，是在 develop fork 的 repo 上開發。這邊直接在 main repo 上開 feature 與開發  
+Different from a blog, open a branch for Feature 1 based on the main branch and develop it locally.
+
 >>
 Pull Requests
 We adopted Pull Requests, having each developer work in their own fork of the repo. This allows developers to create whatever branches they want without polluting the main fork of the repository.
@@ -28,3 +27,21 @@ $ git add feature/1/b1.txt README.md
 $ git commit -m "feat: 1-b1"
 $ git push origin feature/1
 ```
+
+## feature 2
+Following the instructions for blog article, development is done in the developer's own forked repository.
+From the main repository, fork the main repository using another GitHub account, and create a branch named "feature/2" on the forked repository. Then, clone the forked repository from GitHub and proceed with development locally.
+
+### clone fork repo by developer mattleeq
+```bash
+$ git clone git@github.com-mattleeq:mattleeq/githubflow.git githubflow.mattleeq
+$ cd githubflow.mattleeq
+```
+
+### a2
+```bash
+$ git checkout -b feature/2
+$ mkdir -p feature/2
+$ echo "a2" > feature/2/a2.txt
+$ git add feature/2/a2.txt README.md
+$ git commit -m "feat: 2-a2"
