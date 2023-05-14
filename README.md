@@ -85,3 +85,8 @@ $ git add feature/3/c3.txt README.md
 $ git commit -m "feat: 3-c3"
 $ git push origin feature/3
 ```
+
+PR to main repo base on `feature/3`
+```bash
+$ git push origin feature/3
+```
