@@ -53,3 +53,11 @@ $ echo "b2" > feature/2/b2.txt
 $ git add feature/2/b2.txt README.md
 $ git commit -m "feat: 2-b2"
 ```
+
+### c2 & PR to main reop base on feature 2
+```bash
+$ echo "c2" > feature/2/c2.txt
+$ git add feature/2/c2.txt README.md
+$ git commit -m "feat: 2-c2"
+$ git push origin feature/2
+```
