@@ -45,3 +45,11 @@ $ mkdir -p feature/2
 $ echo "a2" > feature/2/a2.txt
 $ git add feature/2/a2.txt README.md
 $ git commit -m "feat: 2-a2"
+```
+
+### b2
+```bash
+$ echo "b2" > feature/2/b2.txt
+$ git add feature/2/b2.txt README.md
+$ git commit -m "feat: 2-b2"
+```
